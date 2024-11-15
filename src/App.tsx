@@ -1,13 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { useTranslation } from 'react-i18next'
+import "./utils/i18n"
+import i18n from './utils/i18n'
 
 function App() {
   const [count, setCount] = useState(0)
   const { t } = useTranslation()
-
+ useEffect(function(){
+   i18n.changeLanguage(navigator.language)
+ },[])
   return (
     <>
       <div>
