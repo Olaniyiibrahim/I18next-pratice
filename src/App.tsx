@@ -9,9 +9,6 @@ import i18n from './utils/i18n'
 function App() {
   const [count, setCount] = useState(0)
   const { t } = useTranslation()
- useEffect(function(){
-   i18n.changeLanguage(navigator.language)
- },[])
   return (
     <>
       <div>
