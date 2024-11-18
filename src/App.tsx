@@ -18,8 +18,9 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+        Est-ce que vous préférez le masculin ou la feminin?
       </div> 
-      <h1>I can use "Trans" also</h1>
+      <h1>{t("vite")}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
