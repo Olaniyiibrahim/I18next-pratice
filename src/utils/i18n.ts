@@ -8,13 +8,13 @@ const resources = {
   en: {
     translation: {
         Welcome_one  : "Welcome to React and {{count}} react-i18next",
-        // Welcome_other : "Welcome to React and {{count}} react-i18next"
+        vite : "I can use Trans also" 
     }  
   },
   fr: {
     translation: {
         Welcome_one : "Bienvenue à {{count}} React et react-i18next",
-        // Welcome_other : "Bienvenue à {{count}} React et react-i18next"
+        vite : "Est-ce que vous préférez le masculin ou la feminin?"
     }
   }
 };
